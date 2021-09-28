@@ -54,8 +54,8 @@ namespace CodeMonkey {
         }
 
         // Creates a Text pop up at the world position
-        public static void TextPopup(string text, Vector3 position, float popupTime = 1f) {
-            UtilsClass.CreateWorldTextPopup(text, position, popupTime);
+        public static void TextPopup(string text, Vector3 position) {
+            UtilsClass.CreateWorldTextPopup(text, position);
         }
 
         // Text Updater in World, (parent == null) = world position

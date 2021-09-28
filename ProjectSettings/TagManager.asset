@@ -6,6 +6,17 @@ TagManager:
   tags:
   - WayPoint
   - RiverEnd
+  - River
+  - Trash
+  - Arrow
+  - AlgaeChucker
+  - AlgaeBomb
+  - Grabbapult
+  - FactoryMachine
+  - MetalTrash
+  - PlasticTrash
+  - PaperTrash
+  - MagicMagnet
   layers:
   - Default
   - TransparentFX
@@ -51,4 +62,7 @@ TagManager:
     locked: 0
   - name: Items
     uniqueID: 1377410609
+    locked: 0
+  - name: UI
+    uniqueID: 2621129127
     locked: 0
