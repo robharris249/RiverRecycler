@@ -270,12 +270,12 @@ MonoBehaviour:
 
 
     You cleaned up our river! That was a lot of hard
-    work, just think it would have been much much easier if people were throwing
-    their trash in the river in the first place.
+    work, just think it would have been much easier if people weren''t throwing their
+    trash in the river in the first place.
 
 
-    Just remember that next time
-    you need to throw some trash out!'
+    Just remember that next time you
+    need to throw some trash out!'
 --- !u!222 &559338094
 CanvasRenderer:
   m_ObjectHideFlags: 0
