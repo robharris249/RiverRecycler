@@ -14,13 +14,14 @@ public class Trash : MonoBehaviour {
     public bool slowed = false;
     private float slowedTimer = 0.0f;
     private bool eliminated = false;
-
+   
     // Start is called before the first frame update
     void Start() {
         target = GameObject.Find("RiverStart");
         direction = target.transform.position - transform.position;//create direction to target
         direction.Normalize();                                     //normalise the directional vector
         health = 100;
+        particles.GetComponent<ParticleSystem>().Stop();
     }
 
     // Update is called once per frame
@@ -37,7 +38,7 @@ public class Trash : MonoBehaviour {
                 slowed = false;             //trash is no longer slowed
             }
 
-            if(particles.activeSelf) {
+            if(particles.GetComponent<ParticleSystem>().isPlaying) {//skips unneccessary processes if particles are not being emitted
                 //For rotating particles to move towards turret
                 Vector3 vectorToTarget = particlesTarget - transform.position;
                 float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
@@ -54,7 +55,7 @@ public class Trash : MonoBehaviour {
             direction.Normalize();                                        //normalise the directional vector
         } 
         else if (collision.tag == "RiverEnd") {                           //if collided with RiverEnd             
-            FindObjectOfType<GameController>().TrashExitedRiver();     //increase trash passed
+            FindObjectOfType<GameController>().TrashExitedRiver();        //increase trash passed
             Destroy(gameObject);                                          //delete this piece of trash
             FindObjectOfType<GameController>().CheckGameOver();           //Check if player has failed
         }
@@ -97,7 +98,6 @@ public class Trash : MonoBehaviour {
     }
 
     public void activateParticles(Vector3 target) {
-        particles.SetActive(true);
         particles.GetComponent<ParticleSystem>().Play();
         particlesTarget = target;
     }

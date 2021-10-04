@@ -150,11 +150,22 @@ public class FactoryController : MonoBehaviour {
             Destroy(machines[i]);
         }
 
-        for(int x = 0; x < factoryGridBuildingSystem.gridWidth; x++) {
+        GameObject[] trash = GameObject.FindGameObjectsWithTag("Trash");
+        for (int i = 0; i < trash.Length; i++) {
+            Destroy(trash[i]);
+        }
+
+        for (int x = 0; x < factoryGridBuildingSystem.gridWidth; x++) {
             for(int y = 0; y < factoryGridBuildingSystem.gridHeight; y++) {
                 factoryGridBuildingSystem.grid.GetGridObject(x, y).occupied = false;
             }
         }
+
+        //reset Variables
+        trashCorrectlySorted = 0;
+        trashIncorrectlySorted = 0;
+        trashBeingProcessed = 0;
+        bonusMoney = 0;
     }
 
     public void StartTrash() {

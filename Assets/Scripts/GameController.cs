@@ -82,7 +82,6 @@ public class GameController : MonoBehaviour {
     }
 
     public void Level2FactorySetup() {
-        factoryController.ClearFactory();
         switchLevels();
         factoryController.setUpFactory(new Vector2Int(0,5), new Vector2Int(6,5), new Vector2Int(6,7));
         UpdateStats();
@@ -99,7 +98,6 @@ public class GameController : MonoBehaviour {
     }
 
     public void Level3FactorySetup() {
-        factoryController.ClearFactory();
         switchLevels();
         factoryController.setUpFactory(new Vector2Int(6,4), new Vector2Int(0,2), new Vector2Int(0,4));
         UpdateStats();
@@ -142,6 +140,7 @@ public class GameController : MonoBehaviour {
             factoryController.gameObject.SetActive(false);
             factoryUI.SetActive(false);
             machinesUIMenu.SetActive(false);
+            factoryController.ClearFactory();
 
             //Move Camera
             Camera.main.transform.position = new Vector3(66, 40, -10);
@@ -164,18 +163,18 @@ public class GameController : MonoBehaviour {
     }
 
     public void UpdateMenuStats() {
-        txtGameOverPercentage.text = (((float)riverController.trashEliminated / riverController.totalLevelTrash) * 100).ToString() + "%";
+        txtGameOverPercentage.text = (((float)riverController.trashEliminated / riverController.totalLevelTrash) * 100).ToString("F2") + "%";
         txtGameOverMoney.text = riverController.money.ToString();
         txtGameOverBuildings.text =
             (GameObject.FindGameObjectsWithTag("Grabbapult").Length +
             GameObject.FindGameObjectsWithTag("AlgaeChucker").Length).ToString();
 
-        txtRiverPercentage.text = (((float)riverController.trashEliminated / riverController.totalLevelTrash) * 100).ToString() + "%";
+        txtRiverPercentage.text = (((float)riverController.trashEliminated / riverController.totalLevelTrash) * 100).ToString("F2") + "%";
         txtRiverMoney.text = riverController.money.ToString();
         txtRiverBuildings.text = (GameObject.FindGameObjectsWithTag("Grabbapult").Length +
             GameObject.FindGameObjectsWithTag("AlgaeChucker").Length).ToString();
 
-        txtFactoryPercentage.text = (((float)factoryController.trashCorrectlySorted / factoryController.trashToBeSorted) * 100).ToString() + "%";
+        txtFactoryPercentage.text = (((float)factoryController.trashCorrectlySorted / factoryController.trashToBeSorted) * 100).ToString("F2") + "%";
         txtFactoyMoney.text = factoryController.bonusMoney.ToString();
     }
 

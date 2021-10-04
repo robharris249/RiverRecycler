@@ -92,7 +92,7 @@ public class MagicMagnet : MonoBehaviour {
 
     protected void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject == target) { //if the target goes out of range
-            collision.gameObject.GetComponent<Trash>().particles.SetActive(false);
+            collision.gameObject.GetComponent<Trash>().particles.GetComponent<ParticleSystem>().Stop();//stop emitting particles
             target = null;                   //remove target
         }
     }

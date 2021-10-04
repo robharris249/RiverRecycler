@@ -22,6 +22,7 @@ public class FactoryTrash : MonoBehaviour {
         if(Vector3.Dot(direction, testDirection) < 0) {
             Destroy(gameObject);
             FindObjectOfType<FactoryController>().trashIncorrectlySorted++;
+            FindObjectOfType<FactoryController>().trashBeingProcessed--;
             FindObjectOfType<GameController>().UpdateStats();
             FindObjectOfType<FactoryController>().checkLevelCleared();
             UtilsClass.CreateWorldTextPopup("Trash not sorted!", transform.position, 20);
