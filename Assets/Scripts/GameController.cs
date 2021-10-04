@@ -193,8 +193,9 @@ public class GameController : MonoBehaviour {
         return riverController.money;
     }
 
-    public void IncreaseTrashPassed() {
+    public void TrashExitedRiver() {
         riverController.trashPassed++;
+        riverController.trashInRiver--;
         UpdateStats();
     }
 

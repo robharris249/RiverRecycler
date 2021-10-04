@@ -54,7 +54,7 @@ public class Trash : MonoBehaviour {
             direction.Normalize();                                        //normalise the directional vector
         } 
         else if (collision.tag == "RiverEnd") {                           //if collided with RiverEnd             
-            FindObjectOfType<GameController>().IncreaseTrashPassed();     //increase trash passed
+            FindObjectOfType<GameController>().TrashExitedRiver();     //increase trash passed
             Destroy(gameObject);                                          //delete this piece of trash
             FindObjectOfType<GameController>().CheckGameOver();           //Check if player has failed
         }
