@@ -196,11 +196,14 @@ public class GridBuildingSystem : MonoBehaviour {
     }
 
     public int GetSelectedBuildingCost() {
-        if(selectedBuilding.tag == "Grabbapult") {
+        if (selectedBuilding.tag == "Grabbapult") {
             return selectedBuilding.GetComponent<Grabbapult>().GetCost();
-        } else if(selectedBuilding.tag == "AlgaeChucker") {
+        } else if (selectedBuilding.tag == "AlgaeChucker") {
             return selectedBuilding.GetComponent<AlgaeChucker>().GetCost();
+        } else if (selectedBuilding.tag == "MagicMagnet") {
+            return selectedBuilding.GetComponent<MagicMagnet>().GetCost();
         } else {
+            Debug.Log("Error Has Occured");
             return 0;
         }
     }

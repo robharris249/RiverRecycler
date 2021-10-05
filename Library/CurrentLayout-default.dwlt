@@ -71,8 +71,8 @@ MonoBehaviour:
     y: 670
     width: 1640
     height: 277
-  m_MinSize: {x: 331, y: 271}
-  m_MaxSize: {x: 14001, y: 10021}
+  m_MinSize: {x: 333, y: 271}
+  m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
   controlID: 101
 --- !u!114 &4
@@ -96,8 +96,8 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 18001, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
   controlID: 142
 --- !u!114 &5
@@ -145,8 +145,8 @@ MonoBehaviour:
     y: 0
     width: 241
     height: 670
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -267,8 +267,8 @@ MonoBehaviour:
     y: 0
     width: 1640
     height: 947
-  m_MinSize: {x: 402, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
   controlID: 143
 --- !u!114 &12
@@ -292,8 +292,8 @@ MonoBehaviour:
     y: 0
     width: 1640
     height: 670
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 144
 --- !u!114 &13
@@ -418,20 +418,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs/Towers&Machines
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs/Towers&Machines
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\RobHa\RiverRecycler
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 104}
-    m_SelectedIDs: dc390000
-    m_LastClickedID: 14812
-    m_ExpandedIDs: 00000000b0390000b2390000b4390000b6390000b8390000ba390000bc390000be390000c0390000c2390000c4390000c6390000c8390000ca390000cc39000000ca9a3b
+    m_SelectedIDs: f2390000
+    m_LastClickedID: 14834
+    m_ExpandedIDs: 00000000d6390000d8390000da390000dc390000de390000e0390000e2390000e4390000e6390000e8390000ea390000ec390000ee390000f0390000f239000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -459,7 +459,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b0390000b2390000b4390000b6390000b8390000ba390000bc390000be390000c0390000c2390000c4390000c6390000c8390000ca390000cc390000
+    m_ExpandedIDs: 00000000d6390000d8390000da390000dc390000de390000e0390000e2390000e4390000e6390000e8390000ea390000ec390000ee390000f0390000f2390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -582,23 +582,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 4e410000
       m_LastClickedID: 0
-      m_ExpandedIDs: 8857ffff9c57ffff6c58ffffcc58ffffd058ffffd458ffff2c5bffff405bffff145cffff785cffff805cffff885cffffc65cffff5c5fffff0862ffffd68cffff5eb3ffff7ec7ffffdcf9ffff5efbffffb44d0000
+      m_ExpandedIDs: 1cf0ffff30f0ffff10f1ffff80f1ffff94f1ffffa8f1ffff5efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: AlgeaChuckerTower (1)
-        m_OriginalName: AlgeaChuckerTower (1)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -33928
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 6}
       m_SearchString: 
@@ -644,9 +644,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 66.950745, y: 39.60803, z: -502.3047}
+    m_Target: {x: 52.853107, y: 30.209684, z: -502.3047}
     speed: 2
-    m_Value: {x: 66.950745, y: 39.60803, z: -502.3047}
+    m_Value: {x: 52.853107, y: 30.209684, z: -502.3047}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
