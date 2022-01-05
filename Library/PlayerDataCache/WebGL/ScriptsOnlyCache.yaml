@@ -16,6 +16,7 @@ ScriptsOnlyBuild:
     - GridBuildingSystem
     - GridLines
     - MagicMagnet
+    - Particles
     - RiverController
     - Sorter
     - Trash
@@ -63,21 +64,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11306}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11596}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11650}
     - Class: 114
-      Script: {instanceID: 12190}
+      Script: {instanceID: 12328}
     - Class: 114
-      Script: {instanceID: 12904}
+      Script: {instanceID: 13042}
     - Class: 114
-      Script: {instanceID: 13684}
+      Script: {instanceID: 13820}
     - Class: 114
-      Script: {instanceID: 13926}
+      Script: {instanceID: 14062}
     - Class: 114
-      Script: {instanceID: 14314}
+      Script: {instanceID: 14450}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -120,21 +121,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11306}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11596}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11650}
     - Class: 114
-      Script: {instanceID: 12190}
+      Script: {instanceID: 12328}
     - Class: 114
-      Script: {instanceID: 12904}
+      Script: {instanceID: 13042}
     - Class: 114
-      Script: {instanceID: 13684}
+      Script: {instanceID: 13820}
     - Class: 114
-      Script: {instanceID: 13926}
+      Script: {instanceID: 14062}
     - Class: 114
-      Script: {instanceID: 14314}
+      Script: {instanceID: 14450}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -173,25 +174,25 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11306}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11596}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11650}
     - Class: 114
-      Script: {instanceID: 12190}
+      Script: {instanceID: 12328}
     - Class: 114
-      Script: {instanceID: 12904}
+      Script: {instanceID: 13042}
     - Class: 114
-      Script: {instanceID: 13172}
+      Script: {instanceID: 13310}
     - Class: 114
-      Script: {instanceID: 13684}
+      Script: {instanceID: 13820}
     - Class: 114
-      Script: {instanceID: 13926}
+      Script: {instanceID: 14062}
     - Class: 114
-      Script: {instanceID: 14314}
+      Script: {instanceID: 14450}
     - Class: 114
-      Script: {instanceID: 14332}
+      Script: {instanceID: 14468}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -250,57 +251,59 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11306}
     - Class: 114
-      Script: {instanceID: 11228}
+      Script: {instanceID: 11364}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11596}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11650}
     - Class: 114
-      Script: {instanceID: 11528}
+      Script: {instanceID: 11664}
     - Class: 114
-      Script: {instanceID: 12052}
+      Script: {instanceID: 12078}
     - Class: 114
       Script: {instanceID: 12190}
     - Class: 114
-      Script: {instanceID: 12776}
+      Script: {instanceID: 12328}
     - Class: 114
-      Script: {instanceID: 12780}
+      Script: {instanceID: 12914}
     - Class: 114
-      Script: {instanceID: 12792}
+      Script: {instanceID: 12918}
     - Class: 114
-      Script: {instanceID: 12904}
+      Script: {instanceID: 12930}
     - Class: 114
-      Script: {instanceID: 12982}
+      Script: {instanceID: 13042}
     - Class: 114
-      Script: {instanceID: 13080}
+      Script: {instanceID: 13120}
     - Class: 114
-      Script: {instanceID: 13172}
+      Script: {instanceID: 13218}
     - Class: 114
-      Script: {instanceID: 13226}
+      Script: {instanceID: 13310}
     - Class: 114
-      Script: {instanceID: 13414}
+      Script: {instanceID: 13364}
     - Class: 114
-      Script: {instanceID: 13498}
+      Script: {instanceID: 13552}
     - Class: 114
-      Script: {instanceID: 13640}
+      Script: {instanceID: 13636}
     - Class: 114
-      Script: {instanceID: 13684}
+      Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 13702}
+      Script: {instanceID: 13820}
     - Class: 114
-      Script: {instanceID: 13712}
+      Script: {instanceID: 13838}
     - Class: 114
-      Script: {instanceID: 13946}
+      Script: {instanceID: 13848}
     - Class: 114
-      Script: {instanceID: 14002}
+      Script: {instanceID: 14082}
     - Class: 114
-      Script: {instanceID: 14094}
+      Script: {instanceID: 14138}
     - Class: 114
-      Script: {instanceID: 14314}
+      Script: {instanceID: 14230}
     - Class: 114
-      Script: {instanceID: 14378}
+      Script: {instanceID: 14450}
+    - Class: 114
+      Script: {instanceID: 14514}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -518,13 +521,19 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: a217dbed3ff5ab266db88684ec05b5ff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Particles
+  - hash:
+      serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 3960061f79bd2e64cff9c061a0224ec9
+      Hash: 7ff90459d07c04ffc84888bf862fc2c2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Trash
@@ -968,7 +977,7 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: 413f7465002ad62b5b8eda9949d195ad
+      Hash: c7759ad62ae06d41ed4ffb112f0c5c33
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MagicMagnet
