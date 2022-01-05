@@ -6,8 +6,7 @@ public class Trash : MonoBehaviour {
 
     public GameObject target;
     public GameObject healthBar;
-    public GameObject particles;
-    public Vector3 particlesTarget;
+    //public GameObject particles;
     private Vector3 direction;
     private float speed = 0.3f;
     private float health;
@@ -21,7 +20,7 @@ public class Trash : MonoBehaviour {
         direction = target.transform.position - transform.position;//create direction to target
         direction.Normalize();                                     //normalise the directional vector
         health = 100;
-        particles.GetComponent<ParticleSystem>().Stop();
+        //particles.GetComponent<ParticleSystem>().Stop();
     }
 
     // Update is called once per frame
@@ -38,13 +37,7 @@ public class Trash : MonoBehaviour {
                 slowed = false;             //trash is no longer slowed
             }
 
-            if(particles.GetComponent<ParticleSystem>().isPlaying) {//skips unneccessary processes if particles are not being emitted
-                //For rotating particles to move towards turret
-                Vector3 vectorToTarget = particlesTarget - transform.position;
-                float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
-                Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-                particles.transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * 2000);
-            }
+            
         }
     }
 
@@ -98,7 +91,7 @@ public class Trash : MonoBehaviour {
     }
 
     public void activateParticles(Vector3 target) {
-        particles.GetComponent<ParticleSystem>().Play();
-        particlesTarget = target;
+        //particles.GetComponent<ParticleSystem>().Play();
+        //particlesTarget = target;
     }
 }

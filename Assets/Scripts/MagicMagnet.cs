@@ -7,6 +7,8 @@ public class MagicMagnet : MonoBehaviour {
     protected float cooldown;
     protected float cooldownTimer;
     protected bool onCoolDown = false;
+    public GameObject particlesPrefab;
+    public GameObject particles;
     protected GameObject target;
     public GameObject timer;
     public GameObject top;
@@ -81,6 +83,10 @@ public class MagicMagnet : MonoBehaviour {
             if (target == null) {               //if no target
                 target = collision.gameObject; //chose new target
                 collision.gameObject.GetComponent<Trash>().activateParticles(transform.position);
+                particles = Instantiate(particlesPrefab, collision.gameObject.transform.position, Quaternion.identity);
+                particles.transform.SetParent(collision.gameObject.transform);
+                particles.GetComponent<Particles>().particlesTarget = transform.position;
+                particles.transform.localScale = new Vector3(2.5f, 2.5f, 1.0f);
             }
             if (!onCoolDown) {
                 collision.gameObject.GetComponent<Trash>().onHit(damage);
@@ -92,7 +98,8 @@ public class MagicMagnet : MonoBehaviour {
 
     protected void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject == target) { //if the target goes out of range
-            collision.gameObject.GetComponent<Trash>().particles.GetComponent<ParticleSystem>().Stop();//stop emitting particles
+            //collision.gameObject.GetComponent<Trash>().particles.GetComponent<ParticleSystem>().Stop();//stop emitting particles
+            Destroy(particles);
             target = null;                   //remove target
         }
     }
